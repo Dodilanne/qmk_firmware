@@ -9,7 +9,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_split_3x6_3(
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_GRV,
         KC_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_ENT,
-        OSM(MOD_LALT), KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, OSL(5),
+        OSM(MOD_LALT), KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, OSL(5),
                                             OSL(1), MEH_T(KC_SPC), OSL(4),           OSL(3),  KC_BSPC,  OSL(2)
     ),
 
@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     // Layer 5: Media
     [5] = LAYOUT_split_3x6_3(
-        KC_TRNS,  KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+        QK_BOOT,  KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
         KC_TRNS, KC_TRNS,    KC_TRNS,    LSG(KC_4),    KC_MEDIA_PLAY_PAUSE,    KC_TRNS,                               KC_MEDIA_PREV_TRACK,    KC_KB_VOLUME_DOWN,    KC_KB_VOLUME_UP,    KC_MEDIA_NEXT_TRACK,    KC_TRNS, KC_TRNS,
         KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_AUDIO_MUTE,    KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,
                                             KC_TRNS, KC_TRNS, KC_TRNS,               KC_TRNS,  KC_TRNS,  KC_TRNS
