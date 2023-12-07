@@ -8,9 +8,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Layer 0: Base
     [0] = LAYOUT_split_3x6_3(
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_GRV,
-        KC_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_ENT,
+        KC_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_BSPC,
         OSM(MOD_LALT), KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, OSL(5),
-                                            OSL(1), MEH_T(KC_SPC), OSL(4),           OSL(3),  KC_BSPC,  OSL(2)
+                                            OSL(1), MEH_T(KC_SPC), OSL(4),           OSL(3),  KC_ENT,  OSL(2)
     ),
 
     // Layer 1: Left hand modifiers
@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TRNS,  KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
         KC_TRNS, OSM(MOD_LGUI),    OSM(MOD_LALT),    OSM(MOD_LCTL),    OSM(MOD_LSFT),    KC_TRNS,                               KC_TRNS,    KC_TRNS,     KC_1,    KC_TRNS,    KC_TRNS, KC_TRNS,
         KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,
-                                            KC_TRNS, KC_TRNS, KC_TRNS,               KC_TRNS,  KC_TRNS,  KC_TRNS
+                                            KC_TRNS, KC_TRNS, KC_TRNS,               KC_TRNS,  KC_BSPC,  KC_TRNS
     ),
 
     // Layer 2: Right hand modifiers
@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TRNS,  KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
         KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    OSM(MOD_LSFT),    OSM(MOD_LCTL),    OSM(MOD_LALT),    OSM(MOD_LGUI), KC_TRNS,
         KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,
-                                            KC_TRNS, KC_TRNS, KC_TRNS,               KC_TRNS,  KC_TRNS,  KC_TRNS
+                                            KC_TRNS, KC_ESC, KC_TRNS,               KC_TRNS,  KC_TRNS,  KC_TRNS
     ),
 
     // Layer 3: Symbols
@@ -39,9 +39,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     // Layer 4: Navigation
     [4] = LAYOUT_split_3x6_3(
-        KC_TRNS,  KC_MINUS,    KC_7,    KC_8,    KC_9,    KC_PLUS,                          KC_DOWN,    KC_RIGHT,    KC_KB_VOLUME_DOWN,    G(S(KC_RBRC)),    KC_TRNS,KC_TRNS,
-        KC_TRNS, KC_COMM,    KC_4,    KC_5,    KC_6,    KC_PERC,                          KC_HOME,    KC_PAGE_DOWN,    KC_PAGE_UP,    KC_END, KC_TRNS,KC_TRNS,
-        KC_TRNS, KC_DOT,    KC_1,    KC_2,    KC_3,    KC_0,                          KC_UP,    KC_LEFT, KC_KB_VOLUME_UP,  G(S(KC_LBRC)), KC_TRNS,KC_TRNS,
+        KC_TRNS,  KC_MINUS,    KC_7,    KC_8,    KC_9,    KC_PLUS,                          KC_WH_U,    KC_HOME,    KC_END,    G(S(KC_RBRC)),    KC_TRNS,KC_TRNS,
+        KC_TRNS, KC_COMM,    KC_4,    KC_5,    KC_6,    KC_PERC,                          KC_LEFT,  KC_DOWN,    KC_UP,    KC_RIGHT, KC_TRNS,KC_TRNS,
+        KC_TRNS, KC_DOT,    KC_1,    KC_2,    KC_3,    KC_0,                          KC_WH_D,      KC_PAGE_DOWN, KC_PAGE_UP,  G(S(KC_LBRC)), KC_TRNS,KC_TRNS,
                                             KC_TRNS, KC_TRNS, KC_TRNS,       CW_TOGG,  KC_TRNS,  KC_TRNS
     ),
 
