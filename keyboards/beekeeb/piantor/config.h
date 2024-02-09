@@ -3,6 +3,8 @@
 
 #pragma once
 
+#define PERMISSIVE_HOLD
+
 /* #define TAPPING_TERM 325 */
 
 // Configure the global tapping term (default: 200ms)
