@@ -8,9 +8,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Layer 0: Base
     [0] = LAYOUT_split_3x6_3(
         KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                               KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,    KC_GRV,
-        KC_ESC,  LGUI_T(KC_A),    LALT_T(KC_R),    LCTL_T(KC_S),    LSFT_T(KC_T),    KC_G,                               KC_M, RSFT_T(KC_N),    RCTL_T(KC_E),    RALT_T(KC_I),    RGUI_T(KC_O),    KC_BSPC,
+        KC_ESC,  KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                               KC_M,    KC_N,    KC_E,    KC_I,    KC_O, KC_BSPC,
         OSM(MOD_LALT), KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,                               KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, OSL(5),
-                                            MEH_T(KC_BSPC), KC_SPC, OSL(4),           OSL(3),  KC_ENT,  OSM(MOD_LSFT)
+                                            OSL(1), MEH_T(KC_SPC), OSL(4),           OSL(3),  KC_ENT,  OSL(2)
+    ),
+
+    // Layer 1: Left hand modifiers
+    [1] = LAYOUT_split_3x6_3(
+        KC_TRNS,  KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+        KC_TRNS, OSM(MOD_LGUI),    OSM(MOD_LALT),    OSM(MOD_LCTL),    OSM(MOD_LSFT),    KC_TRNS,                               KC_TRNS,    KC_TRNS,     KC_1,    KC_TRNS,    KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,
+                                            KC_TRNS, KC_TRNS, KC_TRNS,               KC_TRNS,  KC_BSPC,  KC_TRNS
+    ),
+
+    // Layer 2: Right hand modifiers
+    [2] = LAYOUT_split_3x6_3(
+        KC_TRNS,  KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+        KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    OSM(MOD_LSFT),    OSM(MOD_LCTL),    OSM(MOD_LALT),    OSM(MOD_LGUI), KC_TRNS,
+        KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,
+                                            KC_TRNS, KC_ESC, KC_TRNS,               KC_TRNS,  KC_TRNS,  KC_TRNS
     ),
 
     // Layer 3: Symbols
