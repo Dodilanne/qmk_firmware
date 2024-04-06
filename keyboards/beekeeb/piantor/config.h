@@ -3,6 +3,8 @@
 
 #pragma once
 
+#define PERMISSIVE_HOLD
+
 #define TAPPING_TERM 325
 
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
